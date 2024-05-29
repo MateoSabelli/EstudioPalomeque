@@ -79,7 +79,7 @@ const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOp
 const toggleProductsDropdown = () => setProductsDropdownOpen(!productsDropdownOpen);
 
   return (
-    <div className='fixed w-full '>
+    <div className=' w-full '>
           <div className='h-[10vh] flex justify-between items-center '>
             {/* Logos */}
             <div className='w-1/2 '>
