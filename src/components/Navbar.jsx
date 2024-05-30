@@ -16,7 +16,7 @@ const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOpen);
 
   return (
-    <div className=' w-full'>
+    <div className=' w-full '>
           <div className='h-[10vh] flex justify-between items-center '>
             {/* Logos */}
             <div className='w-1/2 '>
