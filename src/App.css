@@ -1,0 +1,28 @@
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+.section {
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('assets/img/hola2.jpg');
+    background-size: cover;
+}
+
+.section2 {
+  --opacidad-negro: 0.8;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('assets/img/hola.jpg');
+  background-size: cover;
+}
+
+.section3 {
+  --opacidad-negro: 0.8;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('assets/img/hola3.jpg');
+  background-size: cover;
+}

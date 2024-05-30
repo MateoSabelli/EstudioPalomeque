@@ -96,7 +96,7 @@ const toggleProductsDropdown = () => setProductsDropdownOpen(!productsDropdownOp
               <a href="" className='hover:text-[#C4A66B]'>Areas de practicas</a>
               
               {servicesDropdownOpen && (
-                <div className="absolute flex flex-col justify-center items-center py-2 w-1/12 border-t-[#C4A66B] border-t-2 border-gray-300 border-2">
+                <div className="absolute z-10 bg-white flex flex-col justify-center items-center py-2 w-1/12 border-t-[#C4A66B] border-t-2 border-gray-300 border-2">
                   <a href="#">Inicio</a>
                   <a href="#">Areas de practica</a>
                   <a href="#">Contacto</a>
@@ -110,7 +110,7 @@ const toggleProductsDropdown = () => setProductsDropdownOpen(!productsDropdownOp
               </nav>
               
               <button className={button ? 'w-1/2 md:hidden flex justify-center' : 'hidden w-1/2 '} onClick={menu}>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M4 6l16 0" />
               <path d="M4 12l16 0" />
@@ -119,7 +119,7 @@ const toggleProductsDropdown = () => setProductsDropdownOpen(!productsDropdownOp
               </button>
 
               <button className={button ? 'hidden w-1/2' : ''} onClick={menu}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" className='text-center' width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className='text-center' width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M18 6l-12 12" />
                       <path d="M6 6l12 12" />
