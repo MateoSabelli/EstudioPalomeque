@@ -9,7 +9,8 @@ function App() {
   return (
     <div className='flex flex-col'>
       <Navbar/>
-      <Carousel/> 
+      <Carousel/>
+      <Info/> 
       <Services/>
     </div>
   )

@@ -14,7 +14,7 @@ const Info = () => {
             <img src={FotoPerfil} alt="" className='h-[80px]' />
             <p className='px-6 text-[20px]'>Eugenia Palomeque</p>
         </div>
-        <div className='bg-[#C4A66B] mt-20 h-20 '></div>
+        <div className='bg-[#C4A66B] mt-20 h-6 '></div>
     </div>
   )
 }
