@@ -5,8 +5,8 @@ const Services = () => {
   return (
     <section className='flex flex-col text-center items-center gap-[70px]'>
       <h4 className='text-[#C4A66B] font-bold text-[24px]'>Areas de especializacion</h4>
-      <h3 className='text-[30px] font-light text-[#333333]'>Conoce las areas donde podemos ayudarte</h3>
-      <div className='grid grid-cols-2 grid-rows-3 gap-y-[60px] gap-x-[100px]'>
+      <h3 className='text-[30px] font-light text-[#333333] max-md:px-16'>Conoce las areas donde podemos ayudarte</h3>
+      <div className='grid grid-cols-2 grid-rows-3 gap-y-[60px] gap-x-[100px] max-[993px]:gap-x-[50px] max-[849px]:grid-cols-1'>
         <Cards
           title={"Diseño de procesos"}
           desc={"Planificación y estructuración de procedimientos internos para mejorar la eficiencia y el cumplimiento de normativas, analizando y optimizando flujos de trabajo."}

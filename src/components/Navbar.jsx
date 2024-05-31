@@ -25,7 +25,7 @@ const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOp
             </div>
             {/* Menu Web */}
               <nav className={button ? 'max-md:hidden block mx-auto' : 'hidden'}>
-                  <ul className='flex gap-5 italic text-[#333333]'>
+                  <ul className='flex gap-5 text-[#333333]'>
                       <li className='hover:text-sky-500'><a href="">Inicio</a></li>
 
               <li className='block'
@@ -55,7 +55,7 @@ const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOp
               </svg>
               </button>
 
-              <button className={button ? 'hidden w-1/2' : ''} onClick={menu}>
+              <button className={button ? 'hidden w-1/2 ' : 'w-1/2 md:hidden flex justify-center'} onClick={menu}>
                 <svg xmlns="http://www.w3.org/2000/svg" className='text-center' width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M18 6l-12 12" />
