@@ -11,9 +11,9 @@ const Navbar = () => {
     setButton(!button) 
   };
 
-const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+/* const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
-const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOpen);
+const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOpen); */
 
   return (
     <div className=' w-full '>
@@ -29,19 +29,19 @@ const toggleServicesDropdown = () => setServicesDropdownOpen(!servicesDropdownOp
                       <li className='hover:text-sky-500'><a href="">Inicio</a></li>
 
               <li className='block'
-              onMouseEnter={toggleServicesDropdown} onMouseLeave={toggleServicesDropdown}>
-              <a href="" className='hover:text-[#C4A66B]'>Areas de practicas</a>
+              /* onMouseEnter={toggleServicesDropdown} onMouseLeave={toggleServicesDropdown} */>
+              <a href="#practice" className='hover:text-[#C4A66B]'>Areas de prácticas</a>
               
-              {servicesDropdownOpen && (
+              {/* {servicesDropdownOpen && (
                 <div className="absolute z-10 bg-white flex flex-col justify-center items-center py-2 w-1/12 border-t-[#C4A66B] border-t-2 border-gray-300 border-2">
                   <a href="#">Inicio</a>
-                  <a href="#">Areas de practica</a>
+                  <a href="#">Areas de práctica</a>
                   <a href="#">Contacto</a>
                 </div>
-              )}
+              )} */}
             </li>
             <li >
-              <a href="" className='hover:text-[#C4A66B]'>Contacto</a>
+              <a href="#contact" className='hover:text-[#C4A66B]'>Contacto</a>
             </li>
                   </ul>
               </nav>

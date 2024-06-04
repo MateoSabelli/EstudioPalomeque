@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='flex gap-[80px] mt-10 max-sm:gap-0 max-sm:gap-y-5 max-sm:flex-col '>
                     <div className='flex flex-row gap-1'>
                         <MdOutlinePlace size={20} color='#FFF'/>
-                        <p className='text-white text-xs'>Ciudad Autonoma de Buenos Aires</p>
+                        <p className='text-white text-xs'>Ciudad Autónoma de Buenos Aires</p>
                     </div>
                     <div className='flex flex-row gap-1'>
                         <MdMailOutline size={20} color='#FFF'/>

@@ -1,14 +1,24 @@
 import React from "react";
 import Cards from "./Cards";
+import {  motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 
 const Services = () => {
+   const {scrollYProgress} = useScroll()
+  
+  useMotionValueEvent(scrollYProgress, "change", (latest) =>{
+    console.log(latest)
+  })
+
+
   return (
-    <section className="flex flex-col text-center items-center gap-[70px] ">
+    <motion.section 
+     className="flex flex-col text-center items-center gap-[70px]" 
+     id="practice">
       <h4 className="text-[#C4A66B] font-bold text-[24px]">
-        Areas de especializacion
+        Areas de especialización
       </h4>
       <h3 className="text-[30px] font-light text-[#333333] max-md:px-16">
-        Conoce las areas donde podemos ayudarte
+        Conocé las áreas donde podemos ayudarte
       </h3>
       <div className="bg-neutral-100 w-full d-flex justify-center items-center py-5">
         <div className="grid grid-cols-2 grid-rows-3 gap-y-[60px] gap-x-[100px] max-[993px]:gap-x-[50px] max-[849px]:grid-cols-1 ">
@@ -50,7 +60,7 @@ const Services = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
