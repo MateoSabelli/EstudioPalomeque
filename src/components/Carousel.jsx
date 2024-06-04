@@ -19,7 +19,7 @@ const Carousel = () => {
             </a>
           </div>
         </div>
-        <div className="embla__slide relative section2 h-[550px]">
+        <div className="embla__slide relative section2 h-[600px]">
           <div className='absolute left-[105px] bottom-[80px]'>
             <h5 className='text-white text-[40px] mb-0 font-bold'>Auditoría</h5>
             <div className='w-[50%] h-[1px] bg-white mb-4 mt-2' />
@@ -31,7 +31,7 @@ const Carousel = () => {
             </a>
           </div>
         </div>
-        <div className="embla__slide relative section3 h-[550px]">
+        <div className="embla__slide relative section3 h-[600px]">
           <div className='absolute left-[105px] bottom-[80px]'>
             <h5 className='text-white text-[40px] mb-0 font-bold'>Comite</h5>
             <div className='w-[50%] h-[1px] bg-white mb-4 mt-2' />
