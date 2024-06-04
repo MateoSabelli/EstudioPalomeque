@@ -1,25 +1,29 @@
 import React from "react";
 import Cards from "./Cards";
-import {  motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
+import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 
 const Services = () => {
-   const {scrollYProgress} = useScroll()
-  
-  useMotionValueEvent(scrollYProgress, "change", (latest) =>{
+  const { scrollYProgress } = useScroll()
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
     console.log(latest)
   })
 
 
   return (
-    <motion.section 
-     className="flex flex-col text-center items-center gap-[70px]" 
-     id="practice">
-      <h4 className="text-[#C4A66B] font-bold text-[24px]">
-        Areas de especialización
-      </h4>
-      <h3 className="text-[30px] font-light text-[#333333] max-md:px-16">
-        Conocé las áreas donde podemos ayudarte
-      </h3>
+    <motion.section
+      
+      className="flex flex-col py-[100px] text-center items-center"
+      id="practice">
+      <motion.div transition={{duration: 1}} viewport={{amount: 'all'}} initial={{opacity: 0}} whileInView={{opacity: 1}} className="flex flex-col w-full h-[200px] bg-neutral-500 text-center justify-center">
+        <h4 className="text-[#C4A66B] font-bold text-[24px]">
+          Areas de especialización
+        </h4>
+        <h3 className="text-[30px] font-light text-[#333333] max-md:px-16">
+          Conocé las áreas donde podemos ayudarte
+        </h3>
+      </motion.div>
+
       <div className="bg-neutral-100 w-full d-flex justify-center items-center py-5">
         <div className="grid grid-cols-2 grid-rows-3 gap-y-[60px] gap-x-[100px] max-[993px]:gap-x-[50px] max-[849px]:grid-cols-1 ">
           <Cards
